@@ -2,6 +2,23 @@
  .promo{
      background-size: 100% 650px;
     }   
+.carousel{
+    .tns-item{
+        img{
+            width: 668px;
+        }
+    }
+        .next,.prev{
+        display: none;
+        }
+    .tns-nav{
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+
+    }
+}
 }
 
 @media (max-width: 991px){
@@ -24,6 +41,7 @@
         .container{
             padding-left: 10px;
         }
+
 }
 @media (max-width: 767px){
     .container{
@@ -75,6 +93,12 @@
         line-height: 46px;
         } 
     }
+    .carousel{
+        .tns-item{
+            img{
+                width: 540px;
+            }
+        }
     
 }
 
@@ -149,6 +173,12 @@
             font-size: 16px;
         }
     }
-        
-       
+    .carousel{
+        .tns-item{
+            img{
+                width: 295px;
+            }
+        }   
+    }
+}
 }

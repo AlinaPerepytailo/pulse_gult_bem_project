@@ -5,13 +5,14 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Pulse</title>
-        <link rel="stylesheet" href="css/bootstrap-grid.min.css">
         <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
         <link rel="stylesheet" href="css/fonts.css">
+<!--         <link rel="stylesheet" type="text/css" href="css/slick.css"/> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
         <link rel="stylesheet" href="css/style.min.css">
     </head>
     <body>
-       <div class="promo">
+       <section class="promo">
            <div class="container">
                <header class="header">
                    <a href="#" class="header__logo">
@@ -41,8 +42,8 @@
                </div>
             </div>
            </div>
-       </div>
-       <div class="advantages">
+       </section>
+       <section class="advantages">
            <div class="container">
            <h2 class="title">наші переваги</h2>    
            <div class="advantages__icons">
@@ -66,9 +67,9 @@
                 </div>
            </div>
             </div>
-        </div>
+        </section>
 
-        <div class="consultation">
+        <section class="consultation">
             <div class="container">
                 <h2 class="title title_left">Отримайте безкоштовну консультацію<br>щодо підбору пульсометра</h2>
                 <div class="consultation__dsc">Просто заповніть форму заявки<br> і ми передзвонимо вам протягом 10 хвилин</div>
@@ -81,6 +82,45 @@
                     <button class="button button_submit">замовити консультацію</button>
                 </form>
             </div>
-        </div>
+        </section>
+        <section class="carousel">
+            <div class="container">
+                <div class="carousel__inner">
+                    <div>
+                        <img src="img/icons/Slide_1.png" alt="slide">
+                    </div>
+                    <div>
+                        <img src="img/icons/Slide_2.png" alt="slide">
+                    </div>
+                    <div>
+                        <img src="img/icons/Slide_3.png" alt="slide">
+                    </div>
+                </div>
+                <button type="button" class="prev"><img src="img/icons/chevron-left-solid.png"></button>
+                <button type="button" class="next"><img src="img/icons/chevron-right-solid.png"></button>
+            </div>
+        </section>
+
+        <section class="catalog">
+            <div class="contanier">
+                <h2 class="title">каталог пульсометрів</h2>
+                <ul class="catalog__tabs">
+                    <li class="catalog__tab"></li>
+                    <li class="catalog__tab"></li>
+                    <li class="catalog__tab"></li>
+                </ul>
+
+                <div class="catalog__content"></div>
+                <div class="catalog__content"></div>
+                <div class="catalog__content"></div>
+            </div>
+        </section>
+
+        <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script src="js/slick.min.js"></script> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+        <script src="js/scipt.js"></script>
+        
     </body>
     </html>
