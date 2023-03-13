@@ -9,6 +9,9 @@
     line-height: 19px;
     text-transform: uppercase;
     color: #FFFFFF;
+    &:hover{
+        box-shadow: 10px 10px 10px darkred inset;
+    }
     &_main{
         margin-top: 67px;
         width: 300px;

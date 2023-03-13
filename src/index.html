@@ -24,7 +24,7 @@
                    </div>
                    <div class="header__contacts header__contacts_invisible">
                        <a href="tel:+000000000000" class="header__phone">+00 000 000 00 00</a>
-                       <button class="button">замовити дзвінок</button>
+                       <button class="button" data-modal="consultation">замовити дзвінок</button>
                    </div>
                </header>
                <div class="promo__wrapper">
@@ -35,7 +35,7 @@
                    <div class="promo__icon"><img src="img/icons/app-08-hand-cart-64.png" alt="hand-cart">Безкоштовна доставка</div>
                    <div class="promo__icon"><img src="img/icons/messages-64.png" alt="messages">Відповімо на всі запитання</div>
                </div>
-               <button class="button button_main">Замовити консультацію</button>
+               <button class="button button_main" data-modal="consultation">Замовити консультацію</button>
                <div class="promo__link">
                    або
                    <a href="#">Перейти в каталог</a>
@@ -243,7 +243,7 @@
                         <div class="catalog-item__wrapper">
                                 <div class="catalog-item__content catalog-item__content_active">
                                     <img src="img/icons/tab_1.png" alt="pulsometr" class="catalog-item__img">
-                                    <div class="catalog-item__subtitle">Пульсометр Polar FT1</div>
+                                    <div class="catalog-item__subtitle">Пульсометр Polar FT4</div>
                                     <div class="catalog-item__descr">Для перших кроків у тренуваннях, основаних на серцевому ритмі</div>
                                     <a href="#"class="catalog-item__link">Деталі</a>
                                 </div>
@@ -259,8 +259,8 @@
                             <hr>
                             <div class="catalog-item__footer">
                                 <div class="catalog-item__prices">
-                                    <div class="catalog-item__old-price">1200 грн</div>
-                                    <div class="catalog-item__price">1000 грн</div>
+                                    <div class="catalog-item__old-price">3400 грн</div>
+                                    <div class="catalog-item__price">3200 грн</div>
                                 </div>
                                 <button class="button button_mini">купити</button>
                             </div>
@@ -348,6 +348,41 @@
             </div>
         </section>
 
+        <section class="opinion">
+            <div class="container">
+                <h2 class="title">відгуки клієнтів</h2>
+                <div class="opinion__items">
+                    <div class="opinion__item">
+                        <div class="opinion__photo"><img src="img/icons/photo_1.png" alt="photo1"></div>
+                        <div class="opinion__descr">
+                            <h3 class="opinion__title">Ірина Іванченко</h3>
+                            <h4 class="opinion__subtitle">2 півмарафони</h4>
+                            <div class="opinion__text">
+                                Не знала, що собі купити – звернулася до хлопців із RunSmart – підібрали пульсометр, який підійшов саме моїм цілям та фінансовим можливостям. Через деякий час вирішила оновити гаджет – не роздумуючи звернулася туди ж. <span> Нові цілі – новий гаджет!</span>Дякую, RunSmart! 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="opinion__item">
+                        <div class="opinion__photo"><img src="img/icons/photo_2.png" alt="photo2"></div>
+                        <div class="opinion__descr">
+                            <h3 class="opinion__title">Іван Семечкін</h3>
+                            <h4 class="opinion__subtitle">1 півмарафон</h4>
+                            <div class="opinion__text">Крута штука-пульсометр. Зазвичай без них бігав. Виявляється, тільки гірше собі робив. <span>Купив пульсометр, ще у подарунок отримав тренування. Зі мною разом провели перше тренування, навчили користуватися новим гаджетом. Також пояснили основи анатомії, склали план тренувань на місяць уперед.</span> З ними підготувався до свого першого півмарафону! Дякую!!!</div>
+                        </div>
+                    </div>
+                    <div class="opinion__item">
+                        <div class="opinion__photo"><img src="img/icons/photo_3.png" alt="photo3"></div>
+                        <div class="opinion__descr">
+                            <h3 class="opinion__title">Юлія Дашкіна</h3>
+                            <h4 class="opinion__subtitle">2 півмарафони</h4>
+                            <div class="opinion__text">Довго могал почати бігати, оскільки раніше кілька разів починала, але ставало важко - і я кидала. Від друзів почула про RunSmart і про біг із контролем пульсу, тому вирішила спробувати. <span>Подзвонила - хлопці поцікавилися моїми цілями та підібрали дуже цікавий варіант зі знижкою! Тепер бігаю і насолоджуюся бігом! Пробігла вже 2 півмарафони і кілька коротших забігів і не маю наміру зупинятися! </span>  Дякую!!!</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
         <fotter class="footer">
             <!-- <div class="fotter__map"></div> -->
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d162584.7929505746!2d30.383578854335624!3d50.45251052149802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ceff96b893b7%3A0xb5f0eba36b268857!2sPolar.com.ua!5e0!3m2!1suk!2spl!4v1678472529588!5m2!1suk!2spl" width="100%" height="630" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -361,6 +396,42 @@
                 </div>
             </div>
         </fotter>
+
+        <div class="overlay">
+            <div class="modal" id="consultation">
+                <div class="modal__close">&times;</div>
+                <div class="modal__subtitle">Просто заповніть форму заявки</div>
+                <div class="modal__descr">і ми Вам зателефонуємо протягом 10хв</div>
+                    <form class="feed-form feed-form_mt25" action="#">
+                        <input name="name" required placeholder="Ваше ім'я" type="text">
+                        <input name="phone" required placeholder="Ваш телефон" type="number">
+                        <input name="email" required placeholder="Ваш E-mail" type="email">
+                
+                        <!-- <input type="submit" value="замовити консультацію"> -->
+                        <button class="button button_submit">замовити консультацію</button>
+                    </form>
+            </div>
+
+            <div class="modal" id="oder">
+                <div class="modal__close">&times;</div>
+                <div class="modal__subtitle">Ваше замовлення</div>
+                <div class="modal__descr">Пульсометр Polar FT1</div>
+                    <form class="feed-form feed-form_mt25" action="#">
+                        <input name="name" required placeholder="Ваше ім'я" type="text">
+                        <input name="phone" required placeholder="Ваш телефон" type="number">
+                        <input name="email" required placeholder="Ваш E-mail" type="email">
+                
+                        <!-- <input type="submit" value="замовити консультацію"> -->
+                        <button class="button button_submit">купити</button>
+                    </form>
+            </div>
+
+            <div class="modal modal_mini" id="thanks">
+                <div class="modal__close">&times;</div>
+                <div class="modal__subtitle">Дякуємо за Вашу заявку!</div>
+                <div class="modal__descr">Наш менеджер зв'яжеться з Вами у найближчий час!</div>
+            </div>
+        </div>
 
         <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
         <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
