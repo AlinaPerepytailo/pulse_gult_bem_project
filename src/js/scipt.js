@@ -95,6 +95,35 @@
       
     });
 
+    function validateForms(form){
+      $(form).validate({
+        rules:{
+          name: "required",
+          phone: "required",
+          email:{
+            required:true,
+            email:true,
+          }
+        },
+        messages: {
+          name: "Будь ласка, вкажіть своє ім'я",
+          phone: "Будь ласка, вкажіть свій номер телефону",
+          email: {
+            required: "Будь ласка, вкажіть адресу своєї електронної пошти",
+            email: "Не вірна адреса електронної пошти"
+          }
+        }
+      });
+    };
+    
+    validateForms('#consultation-form');
+    validateForms('#consultation form');
+    validateForms('#oder form');
+
+    $('input[name=phone]').mask("+38 (999) 999-9999");
+
+
+
 
   });
   })(jQuery);
