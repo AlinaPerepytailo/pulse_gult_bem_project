@@ -122,6 +122,41 @@
 
     $('input[name=phone]').mask("+38 (999) 999-9999");
 
+    $('form').submit(function(e) {
+      e.preventDefault();
+
+      if (!$(this).valid()){
+        return;
+      }
+
+
+      $.ajax({
+          type: "POST",
+          url: "vendor/phpmailer/phpmailer/send.php",
+          data: $(this).serialize()
+      }).done(function() {
+          $(this).find("input").val("");
+          $('#consultation, #oder').fadeOut();
+          $('.overlay, #thanks').fadeIn('slow');
+
+          $('form').trigger('reset');
+      });
+      return false;
+  });
+ //Smooth scroll and pageup
+ $(window).scroll(function(){
+   if($(this).scrollTop()>1600){
+     $('.pageup').fadeIn();
+   }else{
+     $('.pageup').fadeOut();
+   }
+});
+$("a[href^='#']").click(function(){
+  const _href=$(this).attr("href");
+  $("html, body").animate({scrollTop:$(_href).offset().top+"px"});
+  return false;
+});
+
 
 
 

@@ -9,10 +9,11 @@
         <link rel="stylesheet" href="css/fonts.css">
 <!--         <link rel="stylesheet" type="text/css" href="css/slick.css"/> -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+        <link rel="stylesheet" href="css/animate.css">
         <link rel="stylesheet" href="css/style.min.css">
     </head>
     <body>
-       <section class="promo">
+       <section id="up" class="promo" >
            <div class="container">
                <header class="header">
                    <a href="#" class="header__logo">
@@ -55,7 +56,7 @@
                </div>
                
                 <div class="advantages__icon">
-                    <img src="img/icons/heart.png" alt="heart">
+                    <img src="img/icons/heart.png" alt="heart" class="advantages__icon advantages__icon_animated">
                     <div class="advantages__subheader">Піклуємося про здоров'я</div>
                     <div class="advantages__text"> Ми працюємо для того, щоб Ваші заняття спортом приносили користь Вашому здоров'ю та радість Вам та Вашим близьким!</div>
                 </div>
@@ -73,7 +74,7 @@
             <div class="container">
                 <h2 class="title title_left">Отримайте безкоштовну консультацію<br>щодо підбору пульсометра</h2>
                 <div class="consultation__dsc">Просто заповніть форму заявки<br> і ми передзвонимо вам протягом 10 хвилин</div>
-                <form class="feed-form" action="#" id="consultation-form">
+                <form class="feed-form" action="#" id="consultation-form" >
                     <input name="name" required placeholder="Ваше ім'я" type="text">
                     <input name="phone" required placeholder="Ваш телефон">
                     <input name="email" required placeholder="Ваш E-mail" type="email">
@@ -402,7 +403,7 @@
                 <div class="modal__close">&times;</div>
                 <div class="modal__subtitle">Просто заповніть форму заявки</div>
                 <div class="modal__descr">і ми Вам зателефонуємо протягом 10хв</div>
-                    <form class="feed-form feed-form_mt25" action="#">
+                    <form class="feed-form feed-form_mt25" action="#" method="post">
                         <input name="name" placeholder="Ваше ім'я" type="text">
                         <input name="phone" placeholder="Ваш телефон">
                         <input name="email" placeholder="Ваш E-mail" type="email">
@@ -416,7 +417,7 @@
                 <div class="modal__close">&times;</div>
                 <div class="modal__subtitle">Ваше замовлення</div>
                 <div class="modal__descr">Пульсометр Polar FT1</div>
-                    <form class="feed-form feed-form_mt25" action="#">
+                <form class="feed-form feed-form_mt25" action="#" method="post">
                         <input name="name" required placeholder="Ваше ім'я" type="text">
                         <input name="phone" required placeholder="Ваш телефон">
                         <input name="email" required placeholder="Ваш E-mail" type="email">
@@ -432,6 +433,10 @@
                 <div class="modal__descr">Наш менеджер зв'яжеться з Вами у найближчий час!</div>
             </div>
         </div>
+
+        <a href="#up" class="pageup"><img src="img/icons/circle-chevron-up-solid (1).svg" alt="up"></a>
+        
+
 
         <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
         <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
